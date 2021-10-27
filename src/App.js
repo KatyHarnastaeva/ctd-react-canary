@@ -1,16 +1,15 @@
 import React from 'react';
-let todoList = [{id: 1, title: "Complete assigment"}, 
-                {id: 2, title: "Create pull request"},
-                {id: 3, title: "Merge pull request"}];
+import AddTodoForm from './AddTodoForm';
+import TodoList from './TodoList';
 function App() {
   return (
-    <div style={{ textAlign: 'center' }}>
+    <div>
       <header>
-       <h1>Todo List</h1>
+       <h1 style={{ textAlign: 'center' }} >Todo List</h1>
+       <AddTodoForm/>
+       <TodoList/>
       </header>
-      <ul>
-        {todoList.map((item) => <li key={item.id}>{item.title}</li>)}
-      </ul>
+      
     </div>
   );
 }
