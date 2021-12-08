@@ -2,8 +2,9 @@ import React from 'react';
 let TodoListItem = (props) => {
     const {todo} = props;
     return (
-        <li>{todo.title}</li>
+        <React.Fragment>
+            <li>{todo.title}</li>
+        </React.Fragment>
     );
-
 }
 export default TodoListItem;
