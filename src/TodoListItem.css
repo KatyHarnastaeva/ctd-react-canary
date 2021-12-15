@@ -1,0 +1,11 @@
+div {
+    padding: 5px;;
+}
+
+.button-span {
+    padding-left: 10px;;
+}
+
+.button-span >button {
+    font-size: 10px;;
+}

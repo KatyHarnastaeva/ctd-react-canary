@@ -1,9 +1,15 @@
 import React from 'react';
-let TodoListItem = (props) => {
-    const {todo} = props;
+import './TodoListItem.css';
+let TodoListItem = ({todo, onRemoveTodo }) => {
+
     return (
         <React.Fragment>
-            <li>{todo.title}</li>
+            <li>
+                <div>
+                    <span>{todo.title}</span>
+                    <span class="button-span"><button type="button" onClick={() => onRemoveTodo(todo.id)}>Remove</button></span>
+                </div>
+            </li>
         </React.Fragment>
     );
 }
